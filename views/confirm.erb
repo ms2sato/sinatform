@@ -15,5 +15,10 @@
       </p>
     </div>    
   </div>
+  <form action="send_mail" method="POST">
+    <input type="hidden" value="<%=@email%>" name="email">
+    <input type="hidden" value="<%=@message%>" name="message">
+    <input type="submit" value="送信する">
+  </form>
 </body>
 </html>
